@@ -1,0 +1,77 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Collatz_conjecture_3._1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			Console.WriteLine("Enter value X");
+			int X = int.Parse(Console.ReadLine());
+			int Y = 0;
+			int Q = 0;
+			int R = 0;
+			int F = 0;
+			int S = 0;
+			if (X % 2 == 0)
+			{
+				while (X > 4)
+				{
+
+					while (X % 2 == 0)
+					{
+						X = X / 2;
+						Console.WriteLine(X);
+						Y = Y + 1;
+						F = F + X;
+					}
+					X = X * 3 + 1;
+					Console.WriteLine(X);
+					Q = Q + 1;
+					R = R + X - (X / 3);
+
+				}
+			}
+			else
+				X = X * 3 + 1;
+			Console.WriteLine(X);
+			Q = Q + 1;
+			R = R + X - (X / 3);
+
+
+			while (X > 4)
+			{
+				while (X % 2 == 0)
+				{
+					X = X / 2;
+					Console.WriteLine(X);
+					Y = Y + 1;
+					F = F + X;
+				}
+				X = X * 3 + 1;
+				Console.WriteLine(X);
+				Q = Q + 1;
+				R = R + X - (X / 3);
+
+
+			}
+			S = F - (R - 3);
+
+			Console.WriteLine("Number of divisions :");
+			Console.WriteLine(Y);
+			Console.WriteLine("Number of multiplications with adding the number 1:");
+			Console.WriteLine(Q - 2);
+			Console.WriteLine("The sum of the reduction by division:");
+			Console.WriteLine(F);
+			Console.WriteLine("The sum of increments by multiplying and adding the number 1:");
+			Console.WriteLine(R - 3);
+			Console.WriteLine("The difference between the sum of reducions and increases:");
+			Console.WriteLine(S);
+
+
+		}
+	}
+}
