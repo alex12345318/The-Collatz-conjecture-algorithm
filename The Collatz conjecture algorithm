@@ -58,7 +58,14 @@ namespace Collatz_conjecture_3._1
 
 
 			}
-			S = F - (R - 3);
+			
+			if(X % 2 == 0)
+                          {
+				R = R -6;
+                         }
+            
+                         R = R +3;
+			S = F - R  ;
 
 			Console.WriteLine("Number of divisions :");
 			Console.WriteLine(Y);
@@ -67,7 +74,7 @@ namespace Collatz_conjecture_3._1
 			Console.WriteLine("The sum of the reduction by division:");
 			Console.WriteLine(F);
 			Console.WriteLine("The sum of increments by multiplying and adding the number 1:");
-			Console.WriteLine(R - 3);
+			Console.WriteLine(R );
 			Console.WriteLine("The difference between the sum of reducions and increases:");
 			Console.WriteLine(S);
 
