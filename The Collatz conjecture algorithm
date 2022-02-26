@@ -10,12 +10,12 @@ namespace Collatz_conjecture_3._1
         static void Main(string[] args)
         {
 			Console.WriteLine("Enter value X");
-			int X = int.Parse(Console.ReadLine());
+			long X = int.Parse(Console.ReadLine());
 			int Y = 0;
 			int Q = 0;
-			int R = 0;
-			int F = 0;
-			int S = 0;
+			long R = 0;
+			long F = 0;
+			long S = 0;
 			if (X % 2 == 0)
 			{
 				while (X > 4)
@@ -59,18 +59,25 @@ namespace Collatz_conjecture_3._1
 
 			}
 			
-			if(X % 2 == 0)
-                          {
-				R = R -6;
-                         }
-            
-                         R = R +3;
-			S = F - R  ;
+				if (X % 2 == 0)
+			{
+				R = R - 6;
+				Q = Q - 2;
+
+			}
+			if (X == 4)
+			{
+				R = R + 3;
+				Q = Q - 1;
+			}
+                         
+				
+                         S = F - R  ;
 
 			Console.WriteLine("Number of divisions :");
 			Console.WriteLine(Y);
 			Console.WriteLine("Number of multiplications with adding the number 1:");
-			Console.WriteLine(Q - 2);
+			Console.WriteLine(Q);
 			Console.WriteLine("The sum of the reduction by division:");
 			Console.WriteLine(F);
 			Console.WriteLine("The sum of increments by multiplying and adding the number 1:");
