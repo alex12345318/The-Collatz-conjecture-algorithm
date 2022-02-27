@@ -9,7 +9,7 @@ namespace Collatz_conjecture_3._1
     {
         static void Main(string[] args)
         {
-			Console.WriteLine("Enter value X");
+			Console.WriteLine("Enter even value X");
 			long X = int.Parse(Console.ReadLine());
 			int Y = 0;
 			int Q = 0;
@@ -58,21 +58,12 @@ namespace Collatz_conjecture_3._1
 
 
 			}
-			
-				if (X % 2 == 0)
+			if (X % 2 == 0)
 			{
 				R = R - 6;
-				Q = Q - 2;
+			}
 
-			}
-			if (X == 4)
-			{
-				R = R + 3;
-				Q = Q - 1;
-			}
-                         
-				
-                         S = F - R  ;
+			S = F - R;
 
 			Console.WriteLine("Number of divisions :");
 			Console.WriteLine(Y);
@@ -81,10 +72,78 @@ namespace Collatz_conjecture_3._1
 			Console.WriteLine("The sum of the reduction by division:");
 			Console.WriteLine(F);
 			Console.WriteLine("The sum of increments by multiplying and adding the number 1:");
-			Console.WriteLine(R );
+			Console.WriteLine(R);
 			Console.WriteLine("The difference between the sum of reducions and increases:");
 			Console.WriteLine(S);
+		
 
+			Console.WriteLine("Enter add value V");
+			long V = int.Parse(Console.ReadLine());
+			int B = 0;
+			int C = 0;
+			long T = 0;
+			long D = 0;
+			long M = 0;
+			if (V % 2 == 0)
+			{
+				while (V > 4)
+				{
+
+					while (V % 2 == 0)
+					{
+						V = V / 2;
+						Console.WriteLine(V);
+						B = B + 1;
+						D = D + V;
+					}
+					V = V * 3 + 1;
+					Console.WriteLine(V);
+					C = C + 1;
+					T = T + V - ( V/ 3);
+
+				}
+			}
+			else
+				V = V * 3 + 1;
+			Console.WriteLine(V);
+			C = C + 1;
+			T = T + V - (V / 3);
+
+
+			while (V > 4)
+			{
+				while (V % 2 == 0)
+				{
+					V = V / 2;
+					Console.WriteLine(V);
+					B = B + 1;
+					D = D + V;
+				}
+				V = V * 3 + 1;
+				Console.WriteLine(V);
+				C = C + 1;
+				T = T + V - (V / 3);
+
+
+			}
+			if (V == 4)
+			{
+				T = T - 3;
+			}
+			
+
+			M = D - T;
+
+			Console.WriteLine("Number of divisions :");
+			Console.WriteLine(B);
+			Console.WriteLine("Number of multiplications with adding the number 1:");
+			Console.WriteLine(C);
+			Console.WriteLine("The sum of the reduction by division:");
+			Console.WriteLine(D);
+			Console.WriteLine("The sum of increments by multiplying and adding the number 1:");
+			Console.WriteLine(T);
+			Console.WriteLine("The difference between the sum of reducions and increases:");
+			Console.WriteLine(M);
 
 		}
 	}
