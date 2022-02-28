@@ -14,7 +14,7 @@ The algorithm simulates Collatz conjecture and for each number entered positiv v
                                                       3. Mathematical proof of the Collatz conjecture
                                                       
                                                       
-In each check it is seen that the number of divisions of the entered value is greater than the number of multiplications. This is because after each multiplication by 3 1 is added and the new value becomes an even number  and by function each even number is divisible by 2.It can also be noticed from each check, that the sum of all decrements by division is always greater than the sum of increments by multiplying and adding the number 1. The sum of the divisions is always greater by exactly 1  less than the initial value entered.
+In each check it is seen that the number of divisions of the entered value is greater than the number of multiplications. This is because after each multiplication by 3, 1 is added and the new value becomes an even number  and by function each even number is divisible by 2.It can also be noticed from each check, that the sum of all decrements by division is always greater than the sum of increments by multiplying and adding the number 1. The differenc between of the sum of decrements and sum of increments is always  by exactly 1  less than the initial value entered.
 When the sum of the reduction is subtracted from the initial entered value, you always get 1. This is proof that each number entered in the function 3 * X + 1 / X / 2 will always fall to the value 1, no matter what its value or how many steps it will take to make it happen.
 
 
