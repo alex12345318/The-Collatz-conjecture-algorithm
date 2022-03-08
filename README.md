@@ -320,9 +320,17 @@ Number n2 is always > n1 because two or more consecutive multiplications (increa
  S(m)=S(d)
  Xi = Xe
  
- The proof for this statement is the only possible loop 4-2-1 for which S (m) = 3 and S (d) = 3.
+ The proof for this statement is the only possible loop 4-2-1 for which S(m) = 3 and S(d) = 3.
+ 
  X=4, 4/2=2,X =2, 2/1=1, 2+1=3
- X=1, (1*3)+1=4, 4-X=3(THE VALUE OF X BEFORE MULTIPLICATION AND ADDITION IS 1 AND THEN 4.X IS INCREASED BY 3)
+ X=1, (1*3)+1=4, 4-X=3  (the value of x is before multiplication and addition 1 and then 4, so the value of X has increased by 3)
+ 
+ In any other loop it is not possible for S(m) to be equal to S(d), because if n1 is greater than n2 or equal to n2, X grows to infinity and S(m) is greater then S(d).If n1 <n2 X will inevitably be equal to 1 and S(m) < S(d).
+ 
+ If S(m)>S(d), X grows to infinity.
+ If S(m)<S(d), X = 1.
+ 
+ Loop 4-2-1 is the only possible one, because the minimum value of X has been reached9 value 1)and the function can no longer reduce the value of X and remains trapped in the 4-2-1 loop, due to the basic rules by which it operates, and therefore can no longer rise from the value of 4 or fallless then value 1.
  
  
  
