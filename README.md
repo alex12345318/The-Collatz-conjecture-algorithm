@@ -27,7 +27,7 @@ When the sum of the reduction is subtracted from the initial entered value, you 
   R = S(d) - S(m)
   M = X - R
   M = 1
-                                                              3. Indirect proof of Collatz conjecture.
+                                                              5. Indirect proof of Collatz conjecture.
                                                                      
                                                                      
   Since the function never ends, a value that would not collapse to a value of 1 ,would have to grow indefinitely.Such a value should have an increase amount greater than the decrease amount.The only way X grows is by multiplying and adding.Therefore, it is necessary that the number of multiplication and addition in the function (increase) is equal to or greater than the number of decrease (division).
@@ -44,6 +44,7 @@ X is the initial entered value of an a positive integer number.
 If X is an odd number, then r = 3 × X + 1.
 Now X becomes an even number and e = X ÷ 2.
 After the first iteration,for each positive integer, the sum of the increases (S(m)) is greater than the sum of the decrease (S(d)).If n1 = n2 after each new iteration, S (m) will always be greater than S (d).But it is not possible for n1 to be equal to n2.Let us note the increase (multiplication and addition) with "a" and the decrease (division) with "b".The function is such that for each “a” we have one “b” but for each "b" we do not necessarily have "a".Only after "b" when the value of X is an odd number, we have "a".
+Statistics show that after the first iteration by dividing even numbers, half will be even and the other half odd numbers.But as the number of iterations increases, so does the number of even values, which in total, leads to an increase in the amount of decrease(S(d)).
 
 E.g:
 Enter even value X
@@ -312,7 +313,7 @@ Number n2 is always > n1 because two or more consecutive multiplications (increa
  
  
  
-                                               4. Proof of the impossibility of a closed loop.
+                                               6. Proof of the impossibility of a closed loop.
                                                
                                                
  A closed loop in which the initial entered value (Xi) would be equal to the final value (Xe) after a certain number of iterations is not possible because the values of S(m) and S(d) would have to be equal in that case.
