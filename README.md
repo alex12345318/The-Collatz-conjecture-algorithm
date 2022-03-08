@@ -309,3 +309,25 @@ If it is not possible for n1 to be equal to n2, it logically follows that it is 
 Number n2 is always > n1 because two or more consecutive multiplications (increases) are impossible (due to the addition of number 1),while there are virtually no restriction how many times  a division can occur. Each multiplication converts the value into an even number followed by division (decrease).
 
  The number X that would go to infinity, would have to have the sum of the increases increasing  to infinity and the sum of the reduction increasing to infinity with the sum of the increasing being higher.Constant increase of X is possible only if the number of increases is equal to or greater than the number of reductions.If the number of reductions is greater than the number of increases, increase is not possible and it is only a question of the number of iterations when the initial value of X will fall to 1.
+ 
+ 
+ 
+                                               4. Proof of the impossibility of a closed loop.
+                                               
+                                               
+ A closed loop in which the initial entered value (Xi) would be equal to the final value (Xe) after a certain number of iterations is not possible because the values of S(m) and S(d) would have to be equal in that case.
+ 
+ S(m)=S(d)
+ Xi = Xe
+ 
+ The proof for this statement is the only possible loop 4-2-1 for which S (m) = 3 and S (d) = 3.
+ X=4, 4/2=2,X =2, 2/1=1, 2+1=3
+ X=1, (1*3)+1=4, 4-X=3(THE VALUE OF X BEFORE MULTIPLICATION AND ADDITION IS 1 AND THEN 4.X IS INCREASED BY 3)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
