@@ -23,7 +23,7 @@ When the sum of the reduction is subtracted from the initial entered value, you 
   S(d)- the sum of the reduction.   S(m)- the sum of increase.   R- the difference between the sum of the decrease and the amount of the increase. M-  the difference between the initial value of X and R. M  is always 1. 
   
   S(d)= (X1/2)+(X2/2)+(X3/2)...+(Xn/2)
-  S(m0= (2X1+1)+(2X2+1)+(2X3+1)...+(2Xn+1)
+  S(m)= (2X1+1)+(2X2+1)+(2X3+1)...+(2Xn+1)
   R = S(d) - S(m)
   M = X - R
   M = 1
