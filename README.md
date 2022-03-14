@@ -36,8 +36,8 @@ n1 - number of increases in the function
 n2 - number of reductions in the function
 
 If n 1 = > n 2 , X grows to infinity.
-If n 1 < n 2 X = 1.
-
+If n 1 << n 2 X = 1.
+For each number entered in the function, the number of reductions is significantly greater than the number of increases, sometimes twice.
 X is the initial entered value of an a positive integer number.
   e is the even value of X
   r is an odd value of X.
@@ -326,12 +326,13 @@ Number n2 is always > n1 because two or more consecutive multiplications (increa
  X=4, 4/2=2,X =2, 2/1=1, 2+1=3
  X=1, (1*3)+1=4, 4-X=3  (the value of x is before multiplication and addition 1 and then 4, so the value of X has increased by 3)
  
- In any other loop it is not possible for S(m) to be equal to S(d), because if n1 is greater than n2 or equal to n2, X grows to infinity and S(m) is greater then S(d).If n1 <n2 X will inevitably be equal to 1 and S(m) < S(d).
+ In any other loop it is not possible for S(m) to be equal to S(d), because it has already been shown that it is not possible for n1 to be equal to n2.
+The impossibility of the existence of another closed loop in addition to the 4-2-1 loop is reflected in the fact that by increasing the number of iterations, there is inevitably an increase in the number of "b" (decrease).It is therefore consequential n1<<n2 a S(m)<S(d).
  
  If S(m)>S(d), X grows to infinity.
  If S(m)<S(d), X = 1.
  
- Loop 4-2-1 is the only possible one, because the minimum value of X has been reached9 value 1)and the function can no longer reduce the value of X and remains trapped in the 4-2-1 loop, due to the basic rules by which it operates, and therefore can no longer rise from the value of 4 or fallless then value 1.
+ Loop 4-2-1 is the only possible one, because the minimum value of X has been reached (value 1)and the function can no longer reduce the value of X and remains trapped in the 4-2-1 loop, due to the basic rules by which it operates, and therefore can no longer rise from the value of 4 or fallless then value 1.
  
  
  
